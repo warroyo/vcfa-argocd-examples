@@ -1,20 +1,20 @@
-apiVersion: infrastructure.cci.vmware.com/v1alpha2
-kind: SupervisorNamespace
-metadata:
-  name: test-argo
-  namespace: default-project
-spec:
-  className: small
-  description: Supervisor Namespace with prefix [lab] created by Terraform
-  initialClassConfigOverrides:
-    storageClasses:
-    - limit: 102400Mi
-      name: vSAN Default Storage Policy
-    zones:
-    - cpuLimit: 10000M
-      cpuReservation: 0M
-      memoryLimit: 10000Mi
-      memoryReservation: 0Mi
-      name: zone1
-  regionName: us-west
-  vpcName: us-west-Default-VPC
+# apiVersion: infrastructure.cci.vmware.com/v1alpha2
+# kind: SupervisorNamespace
+# metadata:
+#   name: test-argo
+#   namespace: default-project
+# spec:
+#   className: small
+#   description: Supervisor Namespace with prefix [lab] created by Terraform
+#   initialClassConfigOverrides:
+#     storageClasses:
+#     - limit: 102400Mi
+#       name: vSAN Default Storage Policy
+#     zones:
+#     - cpuLimit: 10000M
+#       cpuReservation: 0M
+#       memoryLimit: 10000Mi
+#       memoryReservation: 0Mi
+#       name: zone1
+#   regionName: us-west
+#   vpcName: us-west-Default-VPC
